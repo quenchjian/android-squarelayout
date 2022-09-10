@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="squareMode" format="enum">
+        <enum name="follow_width" value="1" />
+        <enum name="follow_height" value="2" />
+    </attr>
+    <declare-styleable name="SquareFrameLayout">
+        <attr name="squareMode" />
+    </declare-styleable>
+    <declare-styleable name="SquareLinearLayout">
+        <attr name="squareMode" />
+    </declare-styleable>
+    <declare-styleable name="SquareRelativeLayout">
+        <attr name="squareMode" />
+    </declare-styleable>
+    <declare-styleable name="SquareConstraintLayout">
+        <attr name="squareMode" />
+    </declare-styleable>
+    <declare-styleable name="SquareCardView">
+        <attr name="squareMode" />
+    </declare-styleable>
+</resources>
