@@ -1,18 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <me.quenchjian.squarelayout.SquareFrameLayout
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:background="@color/teal_200"
+        app:squareMode="follow_width">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Square Layout Follow Width"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            tools:ignore="HardcodedText" />
+    </me.quenchjian.squarelayout.SquareFrameLayout>
+
+    <me.quenchjian.squarelayout.SquareCardView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="@color/teal_700"
+        app:cardCornerRadius="15dp"
+        app:squareMode="follow_height">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Square Layout Follow Height"
+            android:padding="8dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            tools:ignore="HardcodedText" />
+    </me.quenchjian.squarelayout.SquareCardView>
+</LinearLayout>
